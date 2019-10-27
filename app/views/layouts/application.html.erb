@@ -1,3 +1,15 @@
+<!--
+TODO:
+Ask Victor how the calendar works
+Split Name into FirstName and LastName fields
+Remove Username field or remove form insert and ignore in DB
+Add Disclaimer/Cancellation content
+Add Phone Number
+Add Email Contact form
+Add Services sheet and Pricing
+Pricing needs to be done in ruby code (for additional services etc)
+-->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -46,17 +58,17 @@
     </div>
     <div class="hidden w-full flex-grow lg:flex lg:flex-none lg:w-auto lg:items-center pt-6 lg:pt-0" id="nav-content">
       <ul class="list-reset lg:flex justify-end flex-1 items-center">
-        <li class="mr-3">
+        <li class="mr-2">
           <a class="inline-block text-gray-600 font-semibold hover:text-purple-700 py-2 px-4" href="/#services">Services</a>
         </li>
-        <li class="mr-3">
+        <li class="mr-2">
         <%= link_to "Users", users_path, class: "inline-block text-gray-600 font-semibold hover:text-purple-700 py-2 px-4" if admin? %>
         </li>
-        <li class="mr-3">
+        <li class="mr-2">
         <%= link_to "Schedule an Appointment", new_app_schedule_path, class: "inline-block text-gray-600 font-semibold hover:text-purple-700 py-2 px-4" %>
         </li>
         <% if user_signed_in? %>
-        <li class="mr-3">
+        <li class="mr-2">
           <%= link_to "My Appointments", app_schedules_path, class: "inline-block text-gray-600 font-semibold hover:text-purple-700 py-2 px-4" %>
         </li>
         <% else %>
