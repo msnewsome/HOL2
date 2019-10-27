@@ -11,8 +11,14 @@
     </div>
   <% end %>
 
+  <input
+    type="text"
+    class="block border border-grey-light w-full p-3 rounded mb-4"
+    name="fullname"
+    placeholder="Full Name" />
+
   <div class="field">
-    <%= form.label :Address, class: "label" %>
+    <%= form.label :Address, type="text", class: "label" %>
     <%= form.text_field :homeAddress, class: "input" %>
   </div>
 
