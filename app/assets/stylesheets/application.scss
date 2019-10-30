@@ -2,3 +2,23 @@
 *= require simple_calendar
 *= require_tree .
 */
+
+
+
+#home{
+  background: url(flower-hands.jpg) no-repeat 50% 50%; display:table;
+  height:100%;
+  width: 100%;
+  background-size: cover;
+}
+
+
+.landing-text {
+  display:table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+a {
+  color:black;
+}
